@@ -9,7 +9,7 @@
   <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
   <remote fetch="https://github.com/kraj" name="clang"/>
   <remote fetch="https://github.com/Freescale" name="community"/>
-  <remote fetch="https://git.openembedded.org"     name="oe"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/busratuzcu" name="busra"/>
 
@@ -29,7 +29,7 @@
     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
     <linkfile dest="README-IMXBSP" src="README"/>
   </project>
-  <project remote="oe"        revision="82c75b466e55d7dca7a2364986ecb704cf63d141" upstream="kirkstone"   name="meta-openembedded"       path="sources/meta-openembedded"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="82c75b466e55d7dca7a2364986ecb704cf63d141" upstream="kirkstone"/>
   <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="d1ad27bfacc937048e7f9084b17f4d7c917d2004" upstream="master"/>
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="9482648daf0bb42ff3475e7892542cf99f3b8d48" upstream="master"/>
   <project name="poky" path="sources/poky" remote="yocto" revision="24a3f7b3648185e33133f5d96b184a6cb6524f3d" upstream="kirkstone"/>
